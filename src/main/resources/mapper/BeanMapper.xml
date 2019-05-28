@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mark.dao.MarkReportDao" >
+
+    <insert id="insertHomeWorkBean" parameterType="com.example.mark.bean.HomeworkBean">
+            insert into homework(mark,fullMark)
+            values(
+            #{mark,jdbcType=VARCHAR},
+            #{fullMark,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertExprimentBean" parameterType="com.example.mark.bean.ExperimentBean">
+            insert into experiment(mark,fullMark)
+            values(
+            #{mark,jdbcType=VARCHAR},
+            #{fullMark,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertTestBean" parameterType="com.example.mark.bean.TestBean">
+            insert into test(mark,fullMark)
+            values(
+            #{mark,jdbcType=VARCHAR},
+            #{fullMark,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertExaminationBean" parameterType="com.example.mark.bean.ExperimentBean">
+            insert into exam(mark,fullMark)
+            values(
+            #{mark,jdbcType=VARCHAR},
+            #{fullMark,jdbcType=VARCHAR})
+    </insert>
+</mapper>
